@@ -1,5 +1,6 @@
 close all
 <<<<<<< HEAD
+<<<<<<< HEAD
 time=Tampsnibble7(:,1);
 chi2=chi2nibble7(:,3);
 freqs=chi2nibble7(:,2);
@@ -12,6 +13,8 @@ Tsquid=runparametersnibble7(:,4);
 jpa_gain=runparametersnibble7(:,5);
 reflection=runparametersnibble7(:,6);
 =======
+=======
+>>>>>>> 03a3f09bc25ef3e3551063d74f24851ed7718b9b
 time=Tampsnibble6(:,1);
 chi2=chi2nibble6(:,3);
 freqs=chi2nibble6(:,2);
@@ -23,6 +26,9 @@ Tcav=runparametersnibble6(:,3);
 Tsquid=runparametersnibble6(:,4);
 jpa_gain=runparametersnibble6(:,5);
 reflection=runparametersnibble6(:,6);
+<<<<<<< HEAD
+>>>>>>> 03a3f09bc25ef3e3551063d74f24851ed7718b9b
+=======
 >>>>>>> 03a3f09bc25ef3e3551063d74f24851ed7718b9b
 
 time_days=(time-time(1))/86400;
