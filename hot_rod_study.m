@@ -1,15 +1,15 @@
 close all
-time=Tampsnibble6(:,1);
-chi2=chi2nibble6(:,3);
-freqs=chi2nibble6(:,2);
-a1_parameters=fitparametersnibble6(:,3);
-a2_parameters=fitparametersnibble6(:,4);
-a3_parameters=fitparametersnibble6(:,5);
-a4_parameters=fitparametersnibble6(:,6);
-Tcav=runparametersnibble6(:,3);
-Tsquid=runparametersnibble6(:,4);
-jpa_gain=runparametersnibble6(:,5);
-reflection=runparametersnibble6(:,6);
+time=Tampsnibble3(:,1);
+chi2=chi2nibble3(:,3);
+freqs=chi2nibble3(:,2);
+a1_parameters=fitparametersnibble3(:,3);
+a2_parameters=fitparametersnibble3(:,4);
+a3_parameters=fitparametersnibble3(:,5);
+a4_parameters=fitparametersnibble3(:,6);
+Tcav=runparametersnibble3(:,3);
+Tsquid=runparametersnibble3(:,4);
+jpa_gain=runparametersnibble3(:,5);
+reflection=runparametersnibble3(:,6);
 
 time_days=(time-time(1))/86400;
 
