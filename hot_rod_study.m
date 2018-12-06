@@ -1,15 +1,15 @@
 close all
-time=Tampsnibble10(:,1);
-chi2=chi2nibble10(:,3);
-freqs=chi2nibble10(:,2);
-a1_parameters=fitparametersnibble10(:,3);
-a2_parameters=fitparametersnibble10(:,4);
-a3_parameters=fitparametersnibble10(:,5);
-a4_parameters=fitparametersnibble10(:,6);
-Tcav=runparametersnibble10(:,3);
-Tsquid=runparametersnibble10(:,4);
-jpa_gain=runparametersnibble10(:,5);
-reflection=runparametersnibble10(:,6);
+time=Tampsnibble2(:,1);
+chi2=chi2nibble2(:,3);
+freqs=chi2nibble2(:,2);
+a1_parameters=fitparametersnibble2(:,3);
+a2_parameters=fitparametersnibble2(:,4);
+a3_parameters=fitparametersnibble2(:,5);
+a4_parameters=fitparametersnibble2(:,6);
+Tcav=runparametersnibble2(:,3);
+Tsquid=runparametersnibble2(:,4);
+jpa_gain=runparametersnibble2(:,5);
+reflection=runparametersnibble2(:,6);
 
 time_days=(time-time(1))/86400;
 
@@ -114,7 +114,7 @@ alpha1=10^(-0.39/10);
 alpha2=10^(-0.39/10);
 S13=10^(-17/10);
 % S13=x(2);
-Tamp_guess=0.1;
+Tamp_guess=0;
 gain_guess=a2/(Tcav*alpha1*alpha2-Tsquid*(alpha1^2*alpha2^2+S13));
 fun=@(x)rf_eqns(x, a1,a2,a3,Tamp_guess,Tsquid,alpha1,alpha2,S13,reflection);
 x0=[gain_guess, Tcav, 0];
