@@ -1,49 +1,15 @@
 close all
-<<<<<<< HEAD
-time=Tampsnibble3(:,1);
-chi2=chi2nibble3(:,3);
-freqs=chi2nibble3(:,2);
-a1_parameters=fitparametersnibble3(:,3);
-a2_parameters=fitparametersnibble3(:,4);
-a3_parameters=fitparametersnibble3(:,5);
-a4_parameters=fitparametersnibble3(:,6);
-Tcav=runparametersnibble3(:,3);
-Tsquid=runparametersnibble3(:,4);
-jpa_gain=runparametersnibble3(:,5);
-reflection=runparametersnibble3(:,6);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-time=Tampsnibble7(:,1);
-chi2=chi2nibble7(:,3);
-freqs=chi2nibble7(:,2);
-a1_parameters=fitparametersnibble7(:,3);
-a2_parameters=fitparametersnibble7(:,4);
-a3_parameters=fitparametersnibble7(:,5);
-a4_parameters=fitparametersnibble7(:,6);
-Tcav=runparametersnibble7(:,3);
-Tsquid=runparametersnibble7(:,4);
-jpa_gain=runparametersnibble7(:,5);
-reflection=runparametersnibble7(:,6);
-=======
-=======
->>>>>>> 03a3f09bc25ef3e3551063d74f24851ed7718b9b
-time=Tampsnibble6(:,1);
-chi2=chi2nibble6(:,3);
-freqs=chi2nibble6(:,2);
-a1_parameters=fitparametersnibble6(:,3);
-a2_parameters=fitparametersnibble6(:,4);
-a3_parameters=fitparametersnibble6(:,5);
-a4_parameters=fitparametersnibble6(:,6);
-Tcav=runparametersnibble6(:,3);
-Tsquid=runparametersnibble6(:,4);
-jpa_gain=runparametersnibble6(:,5);
-reflection=runparametersnibble6(:,6);
-<<<<<<< HEAD
->>>>>>> 03a3f09bc25ef3e3551063d74f24851ed7718b9b
-=======
->>>>>>> 03a3f09bc25ef3e3551063d74f24851ed7718b9b
->>>>>>> 390d03e3ba15af27cc2a13a58c69d1a6ca431f93
+time=Tampsnibble2(:,1);
+chi2=chi2nibble2(:,3);
+freqs=chi2nibble2(:,2);
+a1_parameters=fitparametersnibble2(:,3);
+a2_parameters=fitparametersnibble2(:,4);
+a3_parameters=fitparametersnibble2(:,5);
+a4_parameters=fitparametersnibble2(:,6);
+Tcav=runparametersnibble2(:,3);
+Tsquid=runparametersnibble2(:,4);
+jpa_gain=runparametersnibble2(:,5);
+reflection=runparametersnibble2(:,6);
 
 time_days=(time-time(1))/86400;
 
@@ -148,7 +114,7 @@ alpha1=10^(-0.39/10);
 alpha2=10^(-0.39/10);
 S13=10^(-17/10);
 % S13=x(2);
-Tamp_guess=0.1;
+Tamp_guess=0;
 gain_guess=a2/(Tcav*alpha1*alpha2-Tsquid*(alpha1^2*alpha2^2+S13));
 fun=@(x)rf_eqns(x, a1,a2,a3,Tamp_guess,Tsquid,alpha1,alpha2,S13,reflection);
 x0=[gain_guess, Tcav, 0];
